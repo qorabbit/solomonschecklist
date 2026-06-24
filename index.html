@@ -1,0 +1,227 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Solomons EOFY Checklist 2026</title>
+    <meta
+      name="description"
+      content="View and download the Solomons EOFY Checklist 2026 PDF."
+    />
+    <style>
+      :root {
+        color-scheme: light;
+        --ink: #17202a;
+        --muted: #5d6978;
+        --line: #d9e1e8;
+        --paper: #ffffff;
+        --surface: #f5f7f9;
+        --accent: #0e7c7b;
+        --accent-dark: #075b5b;
+        --focus: #d78b00;
+      }
+
+      * {
+        box-sizing: border-box;
+      }
+
+      body {
+        margin: 0;
+        min-height: 100vh;
+        background: var(--surface);
+        color: var(--ink);
+        font-family:
+          Inter, ui-sans-serif, system-ui, -apple-system, BlinkMacSystemFont,
+          "Segoe UI", sans-serif;
+      }
+
+      .topbar {
+        border-bottom: 1px solid var(--line);
+        background: var(--paper);
+      }
+
+      .topbar-inner {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        gap: 20px;
+        width: min(1180px, calc(100% - 32px));
+        margin: 0 auto;
+        padding: 18px 0;
+      }
+
+      .brand {
+        min-width: 0;
+      }
+
+      .brand-label {
+        margin: 0 0 4px;
+        color: var(--muted);
+        font-size: 13px;
+        font-weight: 700;
+        letter-spacing: 0;
+        text-transform: uppercase;
+      }
+
+      h1 {
+        margin: 0;
+        font-size: clamp(24px, 4vw, 42px);
+        line-height: 1.05;
+      }
+
+      .actions {
+        display: flex;
+        flex-wrap: wrap;
+        align-items: center;
+        justify-content: flex-end;
+        gap: 10px;
+      }
+
+      .button {
+        display: inline-flex;
+        align-items: center;
+        justify-content: center;
+        min-height: 42px;
+        padding: 0 16px;
+        border: 1px solid var(--accent);
+        border-radius: 6px;
+        color: var(--accent-dark);
+        font-size: 15px;
+        font-weight: 700;
+        text-decoration: none;
+        white-space: nowrap;
+      }
+
+      .button.primary {
+        background: var(--accent);
+        color: #ffffff;
+      }
+
+      .button:focus-visible {
+        outline: 3px solid var(--focus);
+        outline-offset: 2px;
+      }
+
+      main {
+        width: min(1180px, calc(100% - 32px));
+        margin: 0 auto;
+        padding: 24px 0 32px;
+      }
+
+      .summary {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        gap: 16px;
+        margin-bottom: 16px;
+        color: var(--muted);
+        font-size: 15px;
+      }
+
+      .summary p {
+        margin: 0;
+      }
+
+      .viewer {
+        overflow: hidden;
+        min-height: 72vh;
+        border: 1px solid var(--line);
+        border-radius: 8px;
+        background: var(--paper);
+      }
+
+      .viewer object,
+      .viewer iframe {
+        display: block;
+        width: 100%;
+        height: 72vh;
+        min-height: 640px;
+        border: 0;
+      }
+
+      .fallback {
+        display: grid;
+        min-height: 360px;
+        place-items: center;
+        padding: 32px;
+        text-align: center;
+      }
+
+      .fallback p {
+        max-width: 520px;
+        margin: 0 0 18px;
+        color: var(--muted);
+        line-height: 1.5;
+      }
+
+      @media (max-width: 760px) {
+        .topbar-inner {
+          align-items: flex-start;
+          flex-direction: column;
+        }
+
+        .actions {
+          width: 100%;
+          justify-content: flex-start;
+        }
+
+        .button {
+          flex: 1 1 150px;
+        }
+
+        .summary {
+          align-items: flex-start;
+          flex-direction: column;
+        }
+
+        .viewer,
+        .viewer object,
+        .viewer iframe {
+          min-height: 620px;
+          height: 70vh;
+        }
+      }
+    </style>
+  </head>
+  <body>
+    <header class="topbar">
+      <div class="topbar-inner">
+        <div class="brand">
+          <p class="brand-label">Solomons Checklist</p>
+          <h1>EOFY Checklist 2026</h1>
+        </div>
+        <nav class="actions" aria-label="PDF actions">
+          <a class="button" href="assets/eofy-checklist-2026.pdf" target="_blank" rel="noopener">
+            Open PDF
+          </a>
+          <a class="button primary" href="assets/eofy-checklist-2026.pdf" download>
+            Download
+          </a>
+        </nav>
+      </div>
+    </header>
+
+    <main>
+      <section class="summary" aria-label="Document details">
+        <p>View the checklist below or download a copy for offline use.</p>
+        <p>PDF version: EOFY_Checklist_2026_v5</p>
+      </section>
+
+      <section class="viewer" aria-label="EOFY Checklist PDF preview">
+        <object data="assets/eofy-checklist-2026.pdf" type="application/pdf">
+          <div class="fallback">
+            <div>
+              <p>
+                Your browser cannot display this PDF preview. You can still open
+                or download the checklist using the buttons above.
+              </p>
+              <a class="button primary" href="assets/eofy-checklist-2026.pdf">
+                Open PDF
+              </a>
+            </div>
+          </div>
+        </object>
+      </section>
+    </main>
+  </body>
+</html>
